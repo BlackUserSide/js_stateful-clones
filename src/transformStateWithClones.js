@@ -32,7 +32,7 @@ function transformStateWithClones(state, actions) {
         break;
     }
 
-    tmp.push(tmpState);
+    tmp.push({ ...tmpState });
   }
 
   return tmp;
